@@ -198,6 +198,7 @@ a{
     width: 100%;
     height: 80vh;
     position: relative;
+    cursor: pointer;
 }
 
 .third-section .player-profile .img1,.third-section .player-profile .img2,
@@ -222,17 +223,18 @@ a{
 }
 
 
-.third-section .overlay{
+.third-section .player-profile .overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(24, 21, 4, 0.4);
+    transition: all 0.5s ease;
 }
 
 
-.third-section .overlay:hover{
+.third-section .player-profile .overlay:hover{
     background: rgba(231, 198, 33, .7);
 }
 
@@ -247,6 +249,271 @@ a{
     bottom: 100px;
 }
 
+/*FOURTH SECTION*/
+
+
+.fourth-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #fec303;
+    text-align:center;
+    padding:30px 30px;
+}
+
+
+.fourth-section .meet{
+    color: #131419;
+    font-size:40px;
+    font-weight: 700;
+}
+
+.fourth-section .where{
+    color: #131419;
+    font-size:50px;
+    font-weight: 500;
+}
+
+.fourth-section p{
+    padding:10px;
+    color: #131419;
+    font-size:18px;
+    font-weight: 300;
+}
+.fourth-section .card-img-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:10px;
+}
+
+.fourth-section .card-img-container .card-img{
+    width: 30%;
+    height:50vh;
+    position: relative;
+}
+
+.fourth-section .card-img-container .card-img .member-img{
+    width:100%;
+    height:55vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
 
 
 
+.fourth-section .card-img-container .card-img .m-img1{
+    background-image:url(img/15f2f3f72ce4392e5165f427dee973fa.jpg);
+}
+.fourth-section .card-img-container .card-img .m-img2{
+    background-image:url(img/joel_harper_headshot_color_llr.jpg);
+}
+.fourth-section .card-img-container .card-img .m-img3{
+    background-image:url(img/f640611135e3258f8ca3d97ac11f4430.jpg);
+}
+
+.fourth-section .card-img-container .card-img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:55vh;
+    background: rgba(24, 21, 4, 0.3);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+
+.fourth-section .card-img-container .card-img .overlay:hover{
+    background: rgba(231, 198, 33, .3);
+    cursor:pointer;
+}
+
+.fourth-section .card-img-container .card-img .coach-name{
+    padding-top:1px;
+    font-size:28px;
+    font-weight:600;
+    color:#131419;
+}
+
+.fourth-section .card-img-container .card-img .coach-title{
+    font-size:20px;
+    font-weight:500;
+    color:#131419;
+}
+
+
+/*FIFTH SECTION*/
+
+
+.fifth-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #141517;
+    position: relative;
+}
+
+
+.fifth-section .article-big-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #ecc113;
+    padding: 10px 30%;
+}
+
+
+.fifth-section .article-container{
+    width: 80%;
+    height: 80vh;
+    position: absolute;
+    left: 125px;
+    top: 75px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fifth-section .article-container .article-content{
+    position: relative;
+    width:50%;
+}
+
+.fifth-section .article-container .article-content .img-content{
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+.fifth-section .article-container .article-content .article-img-1{
+    background-image: url(img/pexels-pixabay-163510.jpg);
+}
+.fifth-section .article-container .article-content .article-img-2{
+    background-image: url(img/markus-spiske-WUehAgqO5hE-unsplash.jpg);
+}
+.fifth-section .article-container .article-content .article-img-3{
+    background-image: url(img/hermes-rivera-qbf59TU077Q-unsplash.jpg);
+}
+.fifth-section .article-container .article-content .article-img-4{
+    background-image: url(img/neonbrand-6mRaiW6DDCM-unsplash.jpg);
+}
+
+
+.fifth-section .article-container .article-content .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background: rgba(24, 21, 4, 0.3);
+    transition: all 0.5s ease;
+}
+
+.fifth-section .article-container .article-content .overlay:hover{
+    background: rgba(48, 48, 48, 0.7);
+}
+
+
+.fifth-section .article-container .article-content .article-date{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    color: #ecc113;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fifth-section .article-container .article-content .article-title{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    color: #e1e1e1;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.fifth-section .article-container .article-content .article-title:hover{
+    color: #ecc113;
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 20px 30px;
+    background-color: #0d1118;
+    border-top: 2px solid #2f3031;
+}
+
+
+.footer .logo a{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.footer span{
+    color: #ecc113;
+}
+
+.footer .navigation{
+    padding-top: 50px;
+}
+
+.footer .navigation .navigation-title{
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.footer .navigation .nav-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .navigation .nav-links a{
+    padding: 0 20px;
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer .navigation .nav-links a:hover{
+    color: #ecc113;
+}
+
+
+.footer .contact .contact-details{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer .contact .contact-info{
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+
+.footer .contact .contact-details a{
+    padding: 0 20px;
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer .contact .contact-details a:last-child{
+    color: #ecc113;
+}
+
+.footer .contact .contact-details a:hover{
+    color: #ecc113;
+}

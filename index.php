@@ -6,100 +6,7 @@
     <title>SENSEI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .fourth-section{
-            width: 100%;
-            height: 100vh;
-            background-color: #fec303;
-            text-align:center;
-            padding:30px 30px;
-        }
-
-
-        .fourth-section .meet{
-            color: #131419;
-            font-size:40px;
-            font-weight: 700;
-        }
-
-        .fourth-section .where{
-            color: #131419;
-            font-size:50px;
-            font-weight: 500;
-        }
-
-        .fourth-section p{
-            padding:10px;
-            color: #131419;
-            font-size:18px;
-            font-weight: 300;
-        }
-        .fourth-section .card-img-container{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding-top:10px;
-        }
-
-        .fourth-section .card-img-container .card-img{
-            width: 30%;
-            height:50vh;
-            position: relative;
-        }
-
-        .fourth-section .card-img-container .card-img .member-img{
-            width:100%;
-            height:55vh;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 50%;
-        }
-
-        
-
-        .fourth-section .card-img-container .card-img .m-img1{
-            background-image:url(img/15f2f3f72ce4392e5165f427dee973fa.jpg);
-        }
-        .fourth-section .card-img-container .card-img .m-img2{
-            background-image:url(img/joel_harper_headshot_color_llr.jpg);
-        }
-        .fourth-section .card-img-container .card-img .m-img3{
-            background-image:url(img/f640611135e3258f8ca3d97ac11f4430.jpg);
-        }
-
-        .fourth-section .card-img-container .card-img .overlay{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width:100%;
-            height:55vh;
-            background: rgba(24, 21, 4, 0.3);
-            border-radius: 50%;
-        }
-
-
-        .fourth-section .card-img-container .card-img .overlay:hover{
-            background: rgba(231, 198, 33, .7);
-            cursor:pointer;
-        }
-
-        .fourth-section .card-img-container .card-img .coach-name{
-            padding-top:1px;
-            font-size:28px;
-            font-weight:600;
-            color:#131419;
-        }
-
-        .fourth-section .card-img-container .card-img .coach-title{
-            font-size:20px;
-            font-weight:500;
-            color:#131419;
-        }
-    </style>
 </head>
-
-
-
 <body>
     <div class="top-section">
         <div class="header">
@@ -194,6 +101,58 @@
                 <div class="overlay"></div>
                 <div class="coach-name">Mary Seficient</div>
                 <div class="coach-title">Instructor</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fifth-section">
+        <div class="article-big-title">Our Articles Tips & Tricks</div>
+        <div class="article-container">
+            <div class="article-content">
+                <div class="img-content article-img-1"></div>
+                <div class="overlay"></div>
+                <div class="article-date">04.10.2020 by Sensei</div>
+                <div class="article-title">10 Best Home Run in the MLB</div>
+            </div>
+            <div class="article-content">
+                <div class="img-content article-img-2"></div>
+                <div class="overlay"></div>
+                <div class="article-date">04.10.2020 by Sensei</div>
+                <div class="article-title">10 Best Home Run in the MLB</div>
+            </div>
+            <div class="article-content">
+                <div class="img-content article-img-3"></div>
+                <div class="overlay"></div>
+                <div class="article-date">04.10.2020 by Sensei</div>
+                <div class="article-title">10 Best Home Run in the MLB</div>
+            </div>
+            <div class="article-content">
+                <div class="img-content article-img-4"></div>
+                <div class="overlay"></div>
+                <div class="article-date">04.10.2020 by Sensei</div>
+                <div class="article-title">10 Best Home Run in the MLB</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
+        <div class="navigation">
+            <div class="navigation-title">NAVIGATION</div>
+            <div class="nav-links">
+                <a href="#">ABOUT US</a>
+                <a href="#">PARTENERS</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACTS</a>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-info">CONTACT INFO</div>
+            <div class="contact-details">
+                <a href="#">096 N Highland St, Arlington</a>
+                <a href="#">VA 32101, USA</a>
+                <a href="#">sensei@demo.org</a>
             </div>
         </div>
     </div>
