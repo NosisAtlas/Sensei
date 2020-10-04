@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #141517;
+}
+
+.top-section .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #2f3031;
+}
+
+.top-section .header .nav-links a{
+    padding: 0 20px;
+}
+
+.top-section .header .nav-links a{
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.top-section .header .nav-links a:hover{
+    color: #ecc113;
+}
+
+a{
+    color: #939393;
+}
+
+.header .logo a{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.header span{
+    color: #ecc113;
+}
+
+
+.header .social-links a{
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    background: #37383a;
+    color: #131419;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
+
+.header .social-links a:hover{
+    background-color: #edc734;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.header .menu{
+    display: none;
+}
+
+
+.header .menu a{
+    color: #e1e1e1;
+    font-size: 24px;
+}
+
+
+
+/*middle-section*/
+
+.second-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.second-section .img-filter{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/AdobeStock_193128467_1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #131419;
+    position: absolute;
+    top: 0;
+    filter: opacity(0.1);
+}
+
+
+.second-section .titles{
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    width: 20%;
+}
+
+
+.second-section .titles h3{
+    font-weight: 500;
+    font-size: 16px;
+    color: #e1e1e1;
+}
+
+
+.second-section .titles h2{
+    color: #e1e1e1;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+
+.second-section .titles h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: #ecc113;
+}
+
+
+.second-section .titles p{
+    color: #e1e1e1;
+    font-weight: 500;
+}
+
+
+.second-section .titles h4{
+    color: #e1e1e1;
+    font-weight: 500;
+}
+
+
+.second-section .btn-sign-up{
+    position: absolute;
+    right: 100px;
+    bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #131419;
+    width: 400px;
+    height: 50px;
+    background-color: #ecc113;
+    padding: 5px 10px;
+}
+
+
+.second-section .btn-sign-up .fa-angle-right{
+    padding: 0 10px;
+    /* width: 30px;
+    height: 30px;
+    padding: 0px 20px 10px 10px; */
+    color: #ecc113;
+    background-color: #131419;
+}
+
+
+.second-section .btn-sign-up:hover{
+    background-color: #e1e1e1;
+}
+
+.second-section .btn-sign-up.fa-angle-right:hover{
+    color: #e1e1e1;
+}
+
+
+/*THIRD SECTION*/
+.third-section{
+    width: 100%;
+    height: 80vh;
+    padding: 0 30px;
+    display: flex;
+}
+
+.third-section .player-profile{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.third-section .player-profile .img1,.third-section .player-profile .img2,
+.third-section .player-profile .img3,.third-section .player-profile .img4{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third-section .player-profile .img1{
+    background-image: url("img/basketball-player-last.jpg");
+}
+.third-section .player-profile .img2{
+    background-image: url("img/baseball-player-last.jpg");
+}
+.third-section .player-profile .img3{
+    background-image: url("img/footballamerican-player-last.jpg");
+}
+.third-section .player-profile .img4{
+    background-image: url("img/foottball-player-last.jpg");
+}
+
+
+.third-section .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 21, 4, 0.4);
+}
+
+
+.third-section .overlay:hover{
+    background: rgba(231, 198, 33, .7);
+}
+
+
+.third-section .player-profile .sport-genre{
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    padding: 10px 20px;
+    color: #131419;
+    background-color: #ecc113;
+    bottom: 100px;
+}
+
+
+
+
