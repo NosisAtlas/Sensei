@@ -17,6 +17,30 @@ body{
     background-color: #141517;
 }
 
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2f3031;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ecc113;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0d1118;
+  }
+
+
+/*TOP SECTION*/
+
 .top-section .header{
     display: flex;
     justify-content: space-between;
@@ -33,6 +57,7 @@ body{
     color: #e1e1e1;
     font-size: 18px;
     font-weight: 600;
+    transition: all 0.5s ease;
 }
 
 .top-section .header .nav-links a:hover{
@@ -89,7 +114,7 @@ a{
 
 
 
-/*middle-section*/
+/*SECOND SECTION*/
 
 .second-section{
     width: 100%;
@@ -114,9 +139,17 @@ a{
 .second-section .titles{
     position: absolute;
     top: 50px;
-    right: 200px;
+    right: 600px;
     width: 20%;
 }
+
+/* .second-section .titles .line{
+    height: 40vh;
+    border-radius: 20px;
+    width: 4px;
+    background: #ecc113;
+    margin: 5px;
+} */
 
 
 .second-section .titles h3{
@@ -235,7 +268,7 @@ a{
 
 
 .third-section .player-profile .overlay:hover{
-    background: rgba(231, 198, 33, .7);
+    background: rgba(231, 198, 33, .5);
 }
 
 
@@ -481,6 +514,7 @@ a{
     color: #e1e1e1;
     font-size: 18px;
     font-weight: 600;
+    transition: all 0.5s ease;
 }
 
 .footer .navigation .nav-links a:hover{
@@ -508,6 +542,7 @@ a{
     color: #e1e1e1;
     font-size: 18px;
     font-weight: 600;
+    transition: all 0.5s ease;
 }
 
 .footer .contact .contact-details a:last-child{

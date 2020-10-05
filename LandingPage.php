@@ -37,12 +37,13 @@
         <div class="img-filter"></div>
         <img style="width:50.8%; height:100vh; position:absolute; left:50px" class="player-regby" src="img/player-regby-png.png" alt="">
         <div class="titles">
+            <!-- <span class="line"></span> -->
             <h3 style=""><span style="color:#ecc113">WELCOME</span> TO THE</h3>
             <h2>ULTIMATE FIGHTING</h2>
             <h1>SPORTS ARTS CLUB</h1>
             <p>Can there be anything better than being able to set up a sports spirit?</p>
         </div>
-        <a href="#" class="btn-sign-up">
+        <a href="Inscription.php" class="btn-sign-up">
             <h4>START SIGNING UP</h4>
             <i style="font-size:30px; font-weight:700;" class="fa fa-angle-right"></i>
         </a>
@@ -118,19 +119,19 @@
                 <div class="img-content article-img-2"></div>
                 <div class="overlay"></div>
                 <div class="article-date">04.10.2020 by Sensei</div>
-                <div class="article-title">10 Best Home Run in the MLB</div>
+                <div class="article-title">10 Best Speed Run in the Tour De France</div>
             </div>
             <div class="article-content">
                 <div class="img-content article-img-3"></div>
                 <div class="overlay"></div>
                 <div class="article-date">04.10.2020 by Sensei</div>
-                <div class="article-title">10 Best Home Run in the MLB</div>
+                <div class="article-title">10 Best K.O in the UFC</div>
             </div>
             <div class="article-content">
                 <div class="img-content article-img-4"></div>
                 <div class="overlay"></div>
                 <div class="article-date">04.10.2020 by Sensei</div>
-                <div class="article-title">10 Best Home Run in the MLB</div>
+                <div class="article-title">10 Best Slam Dunk in the NBA</div>
             </div>
         </div>
     </div>
