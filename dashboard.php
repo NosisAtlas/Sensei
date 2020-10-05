@@ -73,10 +73,10 @@
             </div>
 
             
-            <div class="dashboard-profile-content" id="display">
+            <div class="dashboard-profile-content">
                 <div class="profile-top">
                     <img class="avatar-img shadow-dark" src="img/Harry-Watts-Saxmundham-Suffolk-0040-September-08-2017-copyright-Foyers-Photography-Edit-2-website.jpg" alt="">
-                    <?php echo'<h1 class="name-user">'.$user.'</h1>'?>
+                    <h1 class="name-user">FRESKY</h1>
                     <p class="user-title">Admin</p>
                 </div>
 

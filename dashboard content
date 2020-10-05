@@ -1,0 +1,104 @@
+
+.dashboard-section .dashboard-side-content{
+    width: 300px;
+    height: 92.8vh;
+    background-color: #2f3031;
+    padding: 100px 0;
+    border-right: 2px solid #939393;
+}
+
+
+.dashboard-section .dashboard-side-content .links-list li{
+    padding: 30px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.dashboard-section .dashboard-side-content .links-list li:hover{
+    background-color: #0d1118;
+}
+
+.dashboard-section .dashboard-side-content .links-list li a{
+    color: #e1e1e1;
+}
+
+
+/*DASHBOARD MAIN CONTENT*/
+
+.shadow-dark{
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+
+.dashboard-section .dashboard-main-content{
+    width: 100%;
+    background-color: #131419;
+    display: flex;
+}
+
+
+/* .dashboard-section .dashboard-main-content .dashboard-profile-content{
+    width: 80%;
+} */
+
+
+/*PROFILE TOP*/
+
+.dashboard-section .dashboard-main-content .dashboard-profile-content .profile-top{
+    text-align: center;
+    margin: 100px 700px;
+}
+
+.dashboard-section .dashboard-main-content .dashboard-profile-content .avatar-img{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #e1e1e1;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dashboard-section .dashboard-main-content .dashboard-profile-content .name-user{
+    color: #e1e1e1;
+}
+
+.dashboard-section .dashboard-main-content .dashboard-profile-content .user-title{
+    color: #ecc113;
+    font-size: 18px;
+}
+
+
+/*PROFILE CARDS CONTAINER*/
+
+.dashboard-section .dashboard-main-content .dashboard-profile-content .cards-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.dashboard-section .dashboard-main-content .dashboard-profile-content .cards-container .card{
+    background-color: #e1e1e1;
+    border: 1px solid #939393;
+    padding: 10px 20px;
+}
+
+
+.dashboard-section .dashboard-main-content .dashboard-profile-content .cards-container .card .card-body h2{
+    color: #141517;
+    border-bottom: 1px solid #939393;
+    margin-bottom: 5px;
+}
+
+.dashboard-section .dashboard-main-content .dashboard-profile-content .cards-container .card .card-body p{
+    color: #141517;
+    margin-bottom: 10px;
+}
+
+.dashboard-section .dashboard-main-content .dashboard-profile-content .cards-container .card .card-body .btn{
+    border: 1px solid #939393;
+    padding: 5px 10px;
+    color: #ecc113;
+    background-color: #141517;
+}
