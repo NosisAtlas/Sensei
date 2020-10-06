@@ -102,3 +102,16 @@
     color: #ecc113;
     background-color: #141517;
 }
+
+
+
+
+
+FORM UPLOAD IMAGE
+
+
+<!-- <form action="#" method="post">
+                        <!-- <input type="file" name="srcimage" id="file" style="display:none">
+                        <label for="file" style="color:#141517; background-color:#ecc113; height:30px; width: 40px; padding:10px 20px;cursor:pointer;">Choose a Picture</label>
+                        <input type="submit" name="submit" value="Change">
+                    </form> -->

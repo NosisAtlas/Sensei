@@ -45,6 +45,7 @@
     if (isset($_POST['signin'])) {
         $user = $_POST['username'];
         $pass = $_POST['password'];
+        // $chemin = $_POST['chemin-avatar']
 
         if (empty($_POST['username'])) {
             $errors['username'] = 'Username required';
@@ -57,7 +58,9 @@
         $ligne= $reponse->fetch();
 
         if(isset($ligne['username']) == $user && isset($ligne['password']) == $pass){
-            header('location: dashboard.php'); 
+            $_SESSION['username']= $user; 
+            
+            header('location: profiledashboard.php'); 
         }
         else{
             $errors['username'] = 'Username does not exist';
@@ -77,7 +80,7 @@
     <title>SignUp / SignIn</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="inscription.css">
+    <link rel="stylesheet" type="text/css" href="styleinscription.css">
     <style>
         /* .inner{
             margin-top:50px;

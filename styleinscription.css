@@ -1,0 +1,254 @@
+/* 
+
+Primary Color: #6C63FF;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #141517;
+}
+
+
+/*TOP SECTION*/
+
+.top-section .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    height: 10vh;
+    border-bottom: 1px solid #2f3031;
+}
+
+.top-section .header .nav-links a{
+    padding: 0 20px;
+}
+
+.top-section .header .nav-links a{
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.top-section .header .nav-links a:hover{
+    color: #ecc113;
+}
+
+a{
+    color: #939393;
+}
+
+.header .logo a{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header span{
+    color: #ecc113;
+}
+
+
+.header .social-links a{
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    background: #37383a;
+    color: #131419;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+.header .social-links a:hover{
+    background-color: #edc734;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.header .social-links a i{
+    margin-top: 10px;
+}
+
+
+.header .menu{
+    display: none;
+}
+
+
+.header .menu a{
+    color: #e1e1e1;
+    font-size: 24px;
+}
+
+/*INNER FORM */
+
+
+.inner{
+    height: 75%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 68px -6px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.photo{
+    width: 50%;
+    height: 100%;
+    background-image: url("img/gentrit-sylejmani-JjUyjE-oEbM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    /* padding: 0 50px; */
+}
+.inner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(24, 21, 4, 0.4);
+    transition: all 0.5s ease;
+}
+
+
+.inner .overlay:hover{
+    background: rgba(231, 198, 33, .3);
+}
+
+
+/* .photo img{
+    width: 100%;
+    height: 100%;
+} */
+
+
+.user-form{
+    background: #2f3031;
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.user-form form{
+    margin-top: 50px;
+}
+
+.user-form h1{
+    color: #e1e1e1;
+    padding: 30px 0;
+    font-weight: 700;
+}
+
+.user-form h1 span{
+    color: #ecc113;
+}
+
+.user-form i{
+    position: absolute;
+    color: #141517;
+    margin: 25px 10px;
+}
+input{
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    height: 3em;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 0 30px;
+}
+.safety{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #e1e1e1;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+.line{
+    height: 6px;
+    border-radius: 20px;
+    width: 20%;
+    background: #e1e1e1;
+    margin: 5px;
+}
+span:nth-child(2){
+    background-color: #fffc00;
+}
+span:nth-child(3){
+    background-color: #fffc00;
+}
+.action-btn{
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+}
+.btn{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+    background: transparent;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover{
+    color: #141517;
+    background-color: #e1e1e1;
+}
+
+.primary{
+    border: none;
+    background: #ecc113;
+}
+
+
+@media(max-width: 665px){
+    .photo{
+        display: none;
+    }
+    .user-form{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 990px) and (min-width: 665px){
+    .action-btn{
+        margin: 5px;
+        display: block;
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+
+    }
+}
