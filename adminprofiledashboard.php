@@ -44,6 +44,9 @@
         $requette1->execute(array());
         // $_SESSION['chemin_avatar'] = $ligne['chemin_avatar']
 
+        // $requette2 = $base->prepare("select title_role from roles where id_role = ?");
+        // $requette2->execute(array($_SESSION['id_role']));
+
 
 
 ?>
@@ -69,7 +72,7 @@
 <body>
     <div class="top-section">
         <div class="header">
-            <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
+            <div class="logo"><a href="LandingPage.php"><span>SEN</span>SEI</a></div>
 
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
@@ -112,10 +115,10 @@
             <div class="dashboard-side-content">
                 <ul class="links-list">
                     <li><a href="adminprofiledashboard.php">Profile</a></li>
-                    <li><a href="categorydashboard.php">Manage Categories</a></li>
-                    <li><a href="articlesdashboard.php">Manage Articles</a></li>
-                    <li><a href="manageusersdash.php">Manage Users</a></li>
-                    <li><a href="commentsdashboard.php">Manage Comments</a></li>
+                    <li><a href="admincategorydashboard.php">Manage Categories</a></li>
+                    <li><a href="adminarticlesdashboard.php">Manage Articles</a></li>
+                    <li><a href="adminmanageusersdashboard.php">Manage Users</a></li>
+                    <li><a href="admincommentsdashboard.php">Manage Comments</a></li>
                     <li><a href="deconnexion.php">Disconnect</a></li>
                 </ul>
             </div>

@@ -10,7 +10,7 @@
 <body>
     <div class="top-section">
         <div class="header">
-            <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
+            <div class="logo"><a href="LandingPage.php"><span>SEN</span>SEI</a></div>
 
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
@@ -34,7 +34,7 @@
     
 
     <div class="second-section">
-        <h1>The Ultimate Dynamic Destination Welcomes You!</h1>
+        <h1>The Ultimate Dynamic Sports Destination Welcomes You!</h1>
 
         <div class="about-div">
             <p>While the story of this martial arts club is not as tumultuous and vivid as some stories out of ancient Chinese or Japanese epos tales, 
@@ -49,11 +49,11 @@
 
 
     <div class="footer">
-        <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
+        <div class="logo"><a href="LandingPage.php"><span>SEN</span>SEI</a></div>
         <div class="navigation">
             <div class="navigation-title">NAVIGATION</div>
             <div class="nav-links">
-                <a href="#">ABOUT US</a>
+                <a href="aboutuspage.php">ABOUT US</a>
                 <a href="#">PARTENERS</a>
                 <a href="#">BLOG</a>
                 <a href="#">CONTACTS</a>

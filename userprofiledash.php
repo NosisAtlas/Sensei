@@ -69,7 +69,7 @@
 <body>
     <div class="top-section">
         <div class="header">
-            <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
+            <div class="logo"><a href="LandingPage.php"><span>SEN</span>SEI</a></div>
 
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
@@ -112,8 +112,8 @@
             <div class="dashboard-side-content">
                 <ul class="links-list">
                     <li><a href="userprofiledash.php">Profile</a></li>
-                    <li><a href="articlesdashboard.php">Manage Articles</a></li>
-                    <li><a href="commentsdashboard.php">Manage Comments</a></li>
+                    <li><a href="userarticlesdashboard.php">Manage Articles</a></li>
+                    <li><a href="usercommentsdashboard.php">Manage Comments</a></li>
                     <li><a href="deconnexion.php">Disconnect</a></li>
                 </ul>
             </div>
@@ -124,7 +124,7 @@
                     <img class="avatar-img shadow-dark" src="<?php echo $_SESSION['chemin_avatar'] ?>" alt="">
 
                     <h1 class="name-user"><?php   echo $_SESSION['username'] ;   ?></h1>
-                    <p class="user-title" style="margin-bottom:20px;">Admin</p>
+                    <p class="user-title" style="margin-bottom:20px;">User</p>
                     <form action="#" method="POST" enctype="multipart/form-data">
                         <!-- <label>Select a file</label> -->
                         <input type="file" name="srcimage" id="file" style="display:none">

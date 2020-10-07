@@ -34,8 +34,9 @@
         if(isset($ligne['username'])){
               $errors['username'] = "Username already exists";
         }else{
-            $requette = $base->prepare("insert into users(username,password) values(?,?)");
-            $resultat = $requette->execute(array($user, $pass));
+            $chemin="img/Avatar-1.png";
+            $requette = $base->prepare("insert into users(username,password,chemin_avatar,id_role) values(?,?,?,?)");
+            $resultat = $requette->execute(array($user, $pass, $chemin, 2));
         }
         
     }
@@ -54,13 +55,27 @@
             $errors['password'] ='Password required';
         }
 
-        $reponse = $base->query("select username, password from users where username='$user' and password='$pass' limit 1");
+        $reponse = $base->query("select * from users where username='$user' and password='$pass' limit 1");
         $ligne= $reponse->fetch();
-
+        // echo "<pre>";
+        // var_dump($ligne);
+        // echo "</pre>";
         if(isset($ligne['username']) == $user && isset($ligne['password']) == $pass){
             
+        
             $_SESSION['username']= $user; 
-            header('location: adminprofiledashboard.php'); 
+            if($ligne['id_role'] == 1)
+            {
+                $_SESSION['chemin_avatar']=$ligne['chemin_avatar'];
+                $_SESSION['id_role']=$ligne['id_role'];
+                header('location:adminprofiledashboard.php'); 
+            }else{
+                $_SESSION['id_role']=$ligne['id_role'];
+                // $_SESSION['title_role']=$ligne['title_role'];
+                $_SESSION['chemin_avatar']=$ligne['chemin_avatar'];
+                header('location:userprofiledash.php'); 
+            }
+          
 
 
             // if($ligne['id_role'] = 1){
@@ -106,7 +121,7 @@
 <body>
         <div class="top-section">
                 <div class="header">
-                    <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
+                    <div class="logo"><a href="LandingPage.php"><span>SEN</span>SEI</a></div>
 
                     <div class="nav-links">
                         <a href="aboutuspage.php">ABOUT US</a>
