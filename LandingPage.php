@@ -13,7 +13,7 @@
             <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
 
             <div class="nav-links">
-                <a href="#">ABOUT US</a>
+                <a href="aboutuspage.php">ABOUT US</a>
                 <a href="#">PARTENERS</a>
                 <a href="#">BLOG</a>
                 <a href="#">CONTACTS</a>

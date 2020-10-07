@@ -58,9 +58,16 @@
         $ligne= $reponse->fetch();
 
         if(isset($ligne['username']) == $user && isset($ligne['password']) == $pass){
-            $_SESSION['username']= $user; 
             
-            header('location: profiledashboard.php'); 
+            $_SESSION['username']= $user; 
+            header('location: adminprofiledashboard.php'); 
+
+
+            // if($ligne['id_role'] = 1){
+            //     header('location: adminprofiledashboard.php'); 
+            // }elseif($ligne['id_role'] = 2){
+            //     header('location: userprofiledash.php'); 
+            // }
         }
         else{
             $errors['username'] = 'Username does not exist';
@@ -102,7 +109,7 @@
                     <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
 
                     <div class="nav-links">
-                        <a href="#">ABOUT US</a>
+                        <a href="aboutuspage.php">ABOUT US</a>
                         <a href="#">PARTENERS</a>
                         <a href="#">BLOG</a>
                         <a href="#">CONTACTS</a>

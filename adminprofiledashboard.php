@@ -59,7 +59,7 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DASHBOARD</title>
+    <title>DASHBOARD/ADMIN</title>
     <link rel="stylesheet" href="css/styleprofile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -72,7 +72,7 @@
             <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
 
             <div class="nav-links">
-                <a href="#">ABOUT US</a>
+                <a href="aboutuspage.php">ABOUT US</a>
                 <a href="#">PARTENERS</a>
                 <a href="#">BLOG</a>
                 <a href="#">CONTACTS</a>
@@ -111,11 +111,11 @@
 
             <div class="dashboard-side-content">
                 <ul class="links-list">
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Manage Categories</a></li>
+                    <li><a href="adminprofiledashboard.php">Profile</a></li>
+                    <li><a href="categorydashboard.php">Manage Categories</a></li>
                     <li><a href="articlesdashboard.php">Manage Articles</a></li>
-                    <li><a href="#">Manage Users</a></li>
-                    <li><a href="#">Manage Comments</a></li>
+                    <li><a href="manageusersdash.php">Manage Users</a></li>
+                    <li><a href="commentsdashboard.php">Manage Comments</a></li>
                     <li><a href="deconnexion.php">Disconnect</a></li>
                 </ul>
             </div>

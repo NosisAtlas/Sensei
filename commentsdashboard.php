@@ -38,8 +38,8 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DASHBOARD/ARTICLES</title>
-    <link rel="stylesheet" href="css/stylearticle.css">
+    <title>DASHBOARD/COMMENT</title>
+    <link rel="stylesheet" href="css/stylecomment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         
@@ -90,7 +90,7 @@
 
             <div class="dashboard-side-content">
                 <ul class="links-list">
-                    <li><a href="profiledashboard.php">Profile</a></li>
+                    <li><a href="adminprofiledashboard.php">Profile</a></li>
                     <li><a href="categorydashboard.php">Manage Categories</a></li>
                     <li><a href="articlesdashboard.php">Manage Articles</a></li>
                     <li><a href="manageusersdash.php">Manage Users</a></li>
@@ -103,63 +103,38 @@
             <div class="dashboard-article-content">
                 <form class="article-editor" method="POST" enctype="multipart/data-form">
 
-                    <div class="add-title article-div">
-                        <h1>Add Title</h1>
-                        <input type="text" class="article-inputs" name="article_title" id="">
-                        <select name="category_selection" id="">
-                            <option value="Category" class="options">BasketBall</option>
-                            <option value="Category" class="options">BaseBall</option>
-                            <option value="Category" class="options">American FootBall</option>
-                            <option value="Category" class="options">Soccer</option>
-                        </select>
-                    </div>
-
-                    <div class="add-descr article-div">
-                        <h1>Add Description</h1>
-                        <input type="text" class="article-inputs" name="article_description" id="">
-                    </div>
-
-                    <div class="add-image article-div">
-                        <input type="file" name="srcimage" id="file" style="display:none">
-                        <label for="file" style="color:#141517; background-color:#ecc113; height:30px; width: 40px; padding:10px 20px;cursor:pointer;">Choose a Picture</label>
-                    </div>
-
-                    <div class="add-article article-div">
-                        <h1>Add Article</h1>
-                        <textarea name="text_editor" id="text_editor2" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <div class="publish-article article-div">
-                        <h1>Publish Article</h1>
-                        <input type="submit" value="submit" style="color:#141517; background-color:#ecc113;border:none;padding:10px 30px;cursor:pointer;">
-                    </div>
-
                     <div class="manage-articles article-div">
                         <table class="table">
                             <thead>
                                 <tr>
-                                <th scope="col">#Articles</th>
-                                <th scope="col">Category</th>
-                                <th scope="col">Modify</th>
+                                <th scope="col">Comments</th>
+                                <th scope="col">Users</th>
                                 <th scope="col">Discard</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                <td><a href="#"><h2>Article name</h2></a></td>
-                                <td><a href="#">Change</a></td>
+                                <td><a href="#"><h2>Comments content</h2></a></td>
                                 <td><a href="#">Update</a></td>
                                 <td><a href="#">Delete</a></td>
                                 </tr>
                                 <tr>
-                                <td><a href="#"><h2>Article name</h2></a></td>
-                                <td><a href="#">Change</a></td>
+                                <td><a href="#"><h2>Comments content</h2></a></td>
                                 <td><a href="#">Update</a></td>
                                 <td><a href="#">Delete</a></td>
                                 </tr>
                                 <tr>
-                                <td><a href="#"><h2>Article name</h2></a></td>
-                                <td><a href="#">Change</a></td>
+                                <td><a href="#"><h2>Comments content</h2></a></td>
+                                <td><a href="#">Update</a></td>
+                                <td><a href="#">Delete</a></td>
+                                </tr>
+                                <tr>
+                                <td><a href="#"><h2>Comments content</h2></a></td>
+                                <td><a href="#">Update</a></td>
+                                <td><a href="#">Delete</a></td>
+                                </tr>
+                                <tr>
+                                <td><a href="#"><h2>Comments content</h2></a></td>
                                 <td><a href="#">Update</a></td>
                                 <td><a href="#">Delete</a></td>
                                 </tr>
