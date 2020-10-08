@@ -62,18 +62,19 @@
         // echo "</pre>";
         if(isset($ligne['username']) == $user && isset($ligne['password']) == $pass){
             
-        
             $_SESSION['username']= $user; 
             if($ligne['id_role'] == 1)
             {
                 $_SESSION['chemin_avatar']=$ligne['chemin_avatar'];
                 $_SESSION['id_role']=$ligne['id_role'];
+                $_SESSION['id_user']=$ligne['id_user'];
                 header('location:adminprofiledashboard.php'); 
             }else{
                 $_SESSION['id_role']=$ligne['id_role'];
                 // $_SESSION['title_role']=$ligne['title_role'];
                 $_SESSION['chemin_avatar']=$ligne['chemin_avatar'];
-                header('location:userprofiledash.php'); 
+                $_SESSION['id_user']=$ligne['id_user'];
+                header('location:adminprofiledashboard.php'); 
             }
           
 
@@ -126,7 +127,7 @@
                     <div class="nav-links">
                         <a href="aboutuspage.php">ABOUT US</a>
                         <a href="#">PARTENERS</a>
-                        <a href="#">BLOG</a>
+                        <a href="blog.php">BLOG</a>
                         <a href="#">CONTACTS</a>
                     </div>
 

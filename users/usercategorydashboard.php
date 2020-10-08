@@ -91,15 +91,9 @@
         <div class="dashboard-main-content">
 
             <div class="dashboard-side-content">
-                <ul class="links-list">
+            <ul class="links-list">
                     <li><a href="userprofiledash.php">Profile</a></li>
-                    <?php  if($_SESSION['id_role'] == 1 ) {?>
-                    <li><a href="categorydashboard.php">Manage Categories</a></li>
-                    <?php  } ?>
                     <li><a href="userarticlesdashboard.php">Manage Articles</a></li>
-                    <?php  if($_SESSION['id_role'] == 1 ) {?>
-                    <li><a href="usermanageusersdash.php">Manage Users</a></li>
-                    <?php  } ?>
                     <li><a href="usercommentsdashboard.php">Manage Comments</a></li>
                     <li><a href="deconnexion.php">Disconnect</a></li>
                 </ul>

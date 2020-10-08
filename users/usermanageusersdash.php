@@ -90,11 +90,9 @@
 
             <div class="dashboard-side-content">
                 <ul class="links-list">
-                    <li><a href="profiledashboard.php">Profile</a></li>
-                    <li><a href="categorydashboard.php">Manage Categories</a></li>
-                    <li><a href="articlesdashboard.php">Manage Articles</a></li>
-                    <li><a href="manageusersdash.php">Manage Users</a></li>
-                    <li><a href="commentsdashboard.php">Manage Comments</a></li>
+                    <li><a href="userprofiledash.php">Profile</a></li>
+                    <li><a href="userarticlesdashboard.php">Manage Articles</a></li>
+                    <li><a href="usercommentsdashboard.php">Manage Comments</a></li>
                     <li><a href="deconnexion.php">Disconnect</a></li>
                 </ul>
             </div>

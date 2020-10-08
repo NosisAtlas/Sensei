@@ -14,8 +14,8 @@
 
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
-                <a href="#">PARTENERS</a>
-                <a href="#">BLOG</a>
+                <a href="#">PARTNERS</a>
+                <a href="blog.php">BLOG</a>
                 <a href="#">CONTACTS</a>
             </div>
 
@@ -36,7 +36,7 @@
         <!-- <img style="width: 100%;" class="allsports-thumb" src="img/AdobeStock_193128467_1.jpg" alt=""> -->
         <div class="img-filter"></div>
         <img style="width:50.8%; height:100vh; position:absolute; left:50px" class="player-regby" src="img/player-regby-png.png" alt="">
-        <div class="titles">
+        <div class="titles" style="position:absolute; right:240px">
             <!-- <span class="line"></span> -->
             <h3 style=""><span style="color:#ecc113">WELCOME</span> TO THE</h3>
             <h2>ULTIMATE FIGHTING</h2>
@@ -142,9 +142,9 @@
         <div class="navigation">
             <div class="navigation-title">NAVIGATION</div>
             <div class="nav-links">
-                <a href="#">ABOUT US</a>
+                <a href="aboutuspage.php">ABOUT US</a>
                 <a href="#">PARTENERS</a>
-                <a href="#">BLOG</a>
+                <a href="blog.php">BLOG</a>
                 <a href="#">CONTACTS</a>
             </div>
         </div>

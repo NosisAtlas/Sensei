@@ -156,3 +156,173 @@ body{
     color: #0d1118;
     font-size: 24px;
 }
+
+
+
+
+
+
+
+
+/*SECOND SECTION*/
+
+.second-section{
+    width: 100%;
+    height: 100%;
+}
+
+.second-section h1{
+    color: #e1e1e1;
+    margin: 30px 130px;
+    cursor: pointer;
+}
+
+.second-section .article-container{
+    width: 80%;
+    height: 70vh;
+    margin: 20px auto;
+    background-color: #2f3031;
+    padding: 20px 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.second-section .article-container .article-det-details h2{
+    color: #e1e1e1;
+    margin: 30px 0px;
+}
+
+.second-section .article-container p{
+    color: #e1e1e1;
+    margin-bottom: 10px;
+}
+
+
+
+
+.second-section .article-container .img-content{
+
+    width: 50%;
+    height: 50vh;
+    margin-bottom: 0px;
+    margin-right: 20px;
+}
+
+.second-section .article-container .img-content img{
+    width:100%;
+    height:100%;
+}
+
+
+.second-section .article-container .article-det-details{
+    width: 50%;
+}
+
+
+.second-section .article-container .article-det-details a{
+    margin-top: 10px;
+    color: #0d1118;
+    background-color: #ecc113;
+    font-weight: 550;
+    padding: 10px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 20px 30px;
+    background-color: #0d1118;
+    border-top: 2px solid #2f3031;
+}
+
+
+.footer .logo a{
+    font-size: 40px;
+    font-weight: 700;
+    color: #939393;
+}
+
+.footer span{
+    color: #ecc113;
+}
+
+.footer .navigation{
+    padding-top: 50px;
+}
+
+.footer .navigation .navigation-title{
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.footer .navigation .nav-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .navigation .nav-links a{
+    padding: 0 20px;
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.footer .navigation .nav-links a:hover{
+    color: #ecc113;
+}
+
+
+.footer .contact .contact-details{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer .contact .contact-info{
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+
+.footer .contact .contact-details a{
+    padding: 0 20px;
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.footer .contact .contact-details a:last-child{
+    color: #ecc113;
+}
+
+.footer .contact .contact-details a:hover{
+    color: #ecc113;
+}

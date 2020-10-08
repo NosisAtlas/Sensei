@@ -38,8 +38,13 @@
         //     $requette = $base->prepare("insert into users(username,password,chemin_avatar,id_role) values(?,?,?,?)");
         //     $resultat = $requette->execute(array($user, $pass, $chemin, 2));
         // }
+        // $requette = $base->prepare("UPDATE users SET chemin_avatar = ?  WHERE username = ?");
+        // $resultat = $requette->execute(array($chemin, $_SESSION['username']));
         
     }
+
+
+    
 
 
     
@@ -70,7 +75,7 @@
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
                 <a href="#">PARTENERS</a>
-                <a href="#">BLOG</a>
+                <a href="blog.php">BLOG</a>
                 <a href="#">CONTACTS</a>
             </div>
 
@@ -113,7 +118,7 @@
                     <?php  } ?>
                     <li><a href="adminarticlesdashboard.php">Manage Articles</a></li>
                     <?php  if($_SESSION['id_role'] == 1 ) {?>
-                    <li><a href="adminmanageusersdash.php">Manage Users</a></li>
+                    <li><a href="adminmanageusersdashboard.php">Manage Users</a></li>
                     <?php  } ?>
                     <li><a href="admincommentsdashboard.php">Manage Comments</a></li>
                     <li><a href="deconnexion.php">Disconnect</a></li>
@@ -152,7 +157,7 @@
                             
                                 <tr>
                                 <td><a href="#"><h2><?php   echo $_SESSION['title_category'] ;   ?></h2></a></td>
-                                <td><a href="#">Update</a></td>
+                                <td><a href="admincategoryupdate.php?id=<?php echo $ligne['id_category'];?>&category=<?php echo $ligne['title_category']?>">Update</a></td>
                                 <td><a name="delete" href="admincategorydashboard.php?id=<?php echo $ligne['id_category'];?>&category=<?php echo $ligne['title_category']?>">Delete</a></td>
                                 <?php
                                     if(isset($_GET["id"])){
@@ -162,6 +167,8 @@
                                         $requette = $base->prepare("DELETE FROM categories WHERE id_category='" . $_GET['id'] . "'");
                                         $resultat = $requette->execute(array());
                                         // var_dump($requette);
+                                        header('location:admincategorydashboard.php');
+
                                     }
                         
                                 ?>

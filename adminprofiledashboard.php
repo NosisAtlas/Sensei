@@ -49,6 +49,7 @@
 
 
 
+
 ?>
 
 
@@ -77,7 +78,7 @@
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
                 <a href="#">PARTENERS</a>
-                <a href="#">BLOG</a>
+                <a href="blog.php">BLOG</a>
                 <a href="#">CONTACTS</a>
             </div>
 
@@ -115,9 +116,13 @@
             <div class="dashboard-side-content">
                 <ul class="links-list">
                     <li><a href="adminprofiledashboard.php">Profile</a></li>
+                    <?php  if($_SESSION['id_role'] == 1 ) {?>
                     <li><a href="admincategorydashboard.php">Manage Categories</a></li>
+                    <?php  } ?>
                     <li><a href="adminarticlesdashboard.php">Manage Articles</a></li>
+                    <?php  if($_SESSION['id_role'] == 1 ) {?>
                     <li><a href="adminmanageusersdashboard.php">Manage Users</a></li>
+                    <?php  } ?>
                     <li><a href="admincommentsdashboard.php">Manage Comments</a></li>
                     <li><a href="deconnexion.php">Disconnect</a></li>
                 </ul>
@@ -140,19 +145,21 @@
                 </div>
 
                 <div class="cards-container" style="margin-top:20px;">
+                <?php  if($_SESSION['id_role'] == 1 ) {?>
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h2 class="card-title">Categories</h2>
                             <p class="card-text">With bunch of articles about various category related to sports.</p>
-                            <a href="#" class="btn">See All...</a>
+                            <a href="admincategorydashboard.php" class="btn">See All...</a>
                         </div>
                     </div>
+                <?php } ?>
 
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h2 class="card-title">Articles</h2>
                             <p class="card-text">With bunch of articles about various category related to sports.</p>
-                            <a href="#" class="btn">See All...</a>
+                            <a href="adminarticlesdashboard.php" class="btn">See All...</a>
                         </div>
                     </div>
                     
@@ -160,7 +167,7 @@
                         <div class="card-body">
                             <h2 class="card-title">Comments</h2>
                             <p class="card-text">With bunch of articles about various category related to sports.</p>
-                            <a href="#" class="btn">See All...</a>
+                            <a href="admincommentsdashboard.php" class="btn">See All...</a>
                         </div>
                     </div>
 

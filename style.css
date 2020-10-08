@@ -139,7 +139,7 @@ a{
 .second-section .titles{
     position: absolute;
     top: 50px;
-    right: 600px;
+    right: 0px;
     width: 20%;
 }
 
