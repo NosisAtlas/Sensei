@@ -185,6 +185,7 @@ a{
 
 .second-section .article-content{
     width: 80%;
+    height: 100%;
     margin: 20px auto;
     background-color: #2f3031;
     padding: 20px 40px;
@@ -212,13 +213,16 @@ a{
 
 .second-section .article-content .img-content img{
     width:100%;
-    height:100
+    height:100%;
 }
+
+
 
 
 .clear-float{
     clear: right;
 }
+
 
 
 

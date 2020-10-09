@@ -30,7 +30,13 @@
     <link rel="stylesheet" href="css/styleblog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-
+          .second-section .article-container .img-content img{
+    width:100%;
+    height:100%;
+}
+.second-section .article-container{
+    height:60vh;
+}
     </style>
 </head>
 <body>
@@ -39,10 +45,10 @@
             <div class="logo"><a href="LandingPage.php"><span>SEN</span>SEI</a></div>
 
             <div class="nav-links">
-            <a href="aboutuspage.php">ABOUT US</a>
-                <a href="#">PARTNERS</a>
+                <a href="aboutuspage.php">ABOUT US</a>
+                <a href="Partners.php">PARTNERS</a>
                 <a href="blog.php">BLOG</a>
-                <a href="#">CONTACTS</a>
+                <a href="contactpage.php">CONTACTS</a>
             </div>
 
             <!-- <div class="menu">
@@ -67,7 +73,7 @@
 
     <div class="second-section">
         <h1>Articles</h1>
-        <div class="article-container">
+        <!-- <div class="article-container">
             <div class="img-content"><img src="img/pexels-stanley-morales-2475108.jpg" alt=""></div>
             <div class="article-det-details">
                 <h2>Article Title</h2>
@@ -125,7 +131,7 @@
                 </p>
                 <a class="a-readmore" href="articledetails.php">Read More</a>
             </div>
-        </div>
+        </div> -->
 
         <?php  while($ligne = $requette2->fetch()){ ?>
         <div class="article-container">
@@ -133,9 +139,10 @@
             <div class="article-det-details">
                 <h2><?php echo $ligne['title']?></h2>
                 <p>
-                   <?php echo $ligne['content']?>
+                   <?php echo $ligne['description']?>
                 </p>
-                <a class="a-readmore" href="articledetails.php?id_article=<?php echo $ligne['id_article']?>">Read More</a>
+                <a class="a-readmore" href="articledetails.php?id_article=<?php echo $ligne['id_article'] ?>">Read More</a>
+               
             </div>
         </div>
         <?php } ?>
@@ -163,9 +170,9 @@
             <div class="navigation-title">NAVIGATION</div>
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
-                <a href="#">PARTNERS</a>
-                <a href="Blog.php">BLOG</a>
-                <a href="#">CONTACTS</a>
+                <a href="Partners.php">PARTNERS</a>
+                <a href="blog.php">BLOG</a>
+                <a href="contactpage.php">CONTACTS</a>
             </div>
         </div>
         <div class="contact">

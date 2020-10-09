@@ -1,79 +1,13 @@
-<?php
-        session_start();
-
-        try{
-            $base = new PDO('mysql:host=localhost; dbname=sensei; charset=utf8',"root","");
-            // echo "connexion done";
-        }
-        catch(Exception $e){
-            // echo "connexion not done";
-        };
-
-        // var_dump($_SESSION['username']);
-
-?>  
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT US</title>
-    <link rel="stylesheet" href="css/styleabout.css">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/stylepartners.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        /*USER-SESSION-SECTION*/
-
-.user-session-section{
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    background-color: #ecc113;
-    right: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 10px;
-}
-
-
-.user-session-section .avatar-content{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 1px solid #e1e1e1;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-.user-session-section .avatar-content img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-
-.user-session-section .user-name{
-    font-size: 18px;
-    font-weight: 530;
-    color: #131419;
-}
-
-
-.user-session-section .menu{
-    margin-right: 30px;
-}
-
-
-.user-session-section .menu a{
-    color: #0d1118;
-    font-size: 24px;
-}
+        
     </style>
 </head>
 <body>
@@ -108,21 +42,21 @@
         <div class="avatar-content"><a href="adminprofiledashboard.php"><img src="<?php echo $_SESSION['chemin_avatar']; ?>" alt=""></a></div>
     </div>
     <?php  } ?>
-    
 
-    <div class="second-section">
-        <h1>The Ultimate Dynamic Sports Destination Welcomes You!</h1>
 
-        <div class="about-div">
-            <p>While the story of this sports arts club is not as tumultuous and vivid as some stories out of ancient Chinese or Japanese epos tales, 
-            still we have more than 20 years of our proud history… It was in 1996, when the founder of the club, 
-            Hans Breuter was still considering whether to go to the college for getting a law degree or pursue a career of teaching martial arts 
-            for the living. Luckily for 15, 00 students he and his instructors have taught since, Hans decided that founding a school of his own would be
-             the best decision. During those 20 years Hans and his colleagues have achieved a tremendous level of success, helping thousands of 
-             individuals in becoming more empowered, fit, healthy and mind-balanced!</p>
-             <img src="img/shutterstock_1071593777.jpg" alt="">
+   <div class="second-section">
+       <div class="about-div">
+            <h3>CONTACT US FOR MORE INFORMATIONS.</h3>
+            <div style="margin-left:50px" class="contact-info">CONTACT INFO</div><br><br>
+            <div style="margin-left:50px" class="contact-details">
+                <a href="#">096 N Highland St, Arlington</a><br><br>
+                <a href="#">VA 32101, MDA</a><br><br>
+                <a href="#">+758-754-556-49</a><br><br>
+                <a href="#" style="color:#ecc113">sensei@demo.org</a><br><br>
+            </div>
         </div>
-    </div>
+        
+   </div>
 
 
     <div class="footer">

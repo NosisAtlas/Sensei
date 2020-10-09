@@ -14,9 +14,9 @@
 
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
-                <a href="#">PARTNERS</a>
+                <a href="Partners.php">PARTNERS</a>
                 <a href="blog.php">BLOG</a>
-                <a href="#">CONTACTS</a>
+                <a href="contactpage.php">CONTACTS</a>
             </div>
 
             <div class="menu">
@@ -138,14 +138,14 @@
 
 
     <div class="footer">
-        <div class="logo"><a href="#"><span>SEN</span>SEI</a></div>
+        <div class="logo"><a href="LandingPage.php"><span>SEN</span>SEI</a></div>
         <div class="navigation">
             <div class="navigation-title">NAVIGATION</div>
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
-                <a href="#">PARTENERS</a>
+                <a href="Partners.php">PARTNERS</a>
                 <a href="blog.php">BLOG</a>
-                <a href="#">CONTACTS</a>
+                <a href="contactpage.php">CONTACTS</a>
             </div>
         </div>
         <div class="contact">

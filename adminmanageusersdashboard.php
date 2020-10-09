@@ -61,9 +61,9 @@
 
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
-                <a href="#">PARTENERS</a>
+                <a href="Partners.php">PARTNERS</a>
                 <a href="blog.php">BLOG</a>
-                <a href="#">CONTACTS</a>
+                <a href="contactpage.php">CONTACTS</a>
             </div>
 
             <div class="menu">
@@ -137,7 +137,19 @@
                                 <th scope="col" style="padding:20px 50px">Discard</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody><?php
+                                    if(isset($_GET["id"])){
+                                        $category = $_GET["username"];
+
+
+                                        $requette = $base->prepare("DELETE FROM users WHERE id_user=?");
+                                        $resultat = $requette->execute(array($_GET['id']));
+                                        // var_dump($requette);
+                                       // header('location:adminmanageusersdashboard.php'); //PROBLEM OF HEADER!!!!!!
+
+                                    }
+                        
+                                ?>
                             <?php     $reponse = $base->query("select * from users");
                                 while($ligne=$reponse->fetch()) { 
                                     $_POST['user_add']=$ligne['username'];
@@ -146,19 +158,6 @@
                                 <td><a href="#"><h2><?php   echo $_POST['user_add'] ;   ?></h2></a></td>
                                 <td><a href="adminmanageuserupdatedashboard.php?id=<?php echo $ligne['id_user'];?>&username=<?php echo $ligne['username']?>">Update</a></td>
                                 <td><a name="delete" href="adminmanageusersdashboard.php?id=<?php echo $ligne['id_user'];?>&username=<?php echo $ligne['username']?>">Delete</a></td>
-                                <?php
-                                    if(isset($_GET["id"])){
-                                        $category = $_GET["username"];
-
-
-                                        $requette = $base->prepare("DELETE FROM users WHERE id_user='" . $_GET['id'] . "'");
-                                        $resultat = $requette->execute(array());
-                                        // var_dump($requette);
-                                        // header('location:adminmanageusersdashboard.php'); PROBLEM OF HEADER!!!!!!
-
-                                    }
-                        
-                                ?>
                                 </tr>
                                 <?php } ?>
                             </tbody>

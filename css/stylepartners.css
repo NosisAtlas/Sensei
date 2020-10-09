@@ -38,11 +38,8 @@ body{
     background: #0d1118;
   }
 
-/*TOP SECTION*/
 
-.top-section{
-    position: relative;
-}
+/*TOP SECTION*/
 
 .top-section .header{
     display: flex;
@@ -67,12 +64,13 @@ body{
     color: #ecc113;
 }
 
-
+a{
+    color: #939393;
+}
 
 .header .logo a{
     font-size: 40px;
     font-weight: 700;
-    color: #939393;
 }
 
 .header span{
@@ -101,6 +99,17 @@ body{
     background-color: #edc734;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+
+.header .menu{
+    display: none;
+}
+
+
+.header .menu a{
+    color: #e1e1e1;
+    font-size: 24px;
 }
 
 
@@ -164,6 +173,13 @@ body{
 
 
 
+
+
+
+
+
+
+
 /*SECOND SECTION*/
 
 .second-section{
@@ -171,71 +187,44 @@ body{
     height: 100%;
 }
 
-.second-section h1{
+.second-section h4{
     color: #e1e1e1;
-    margin: 30px 130px;
-    cursor: pointer;
+    margin: 30px 50px;
 }
 
-.second-section .article-container{
+.second-section .about-div{
     width: 80%;
-    height: 70vh;
     margin: 20px auto;
     background-color: #2f3031;
     padding: 20px 40px;
     border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
-}
-
-.second-section .article-container .article-det-details h2{
     color: #e1e1e1;
-    margin: 30px 0px;
 }
 
-.second-section .article-container p{
+.second-section .about-div h3{
+    margin: 30px 40px;
+    color: #edc734;
+    font-size: 20px;
+}
+
+.second-section .about-div h2{
+    margin: 30px 20px;
+    color: #ecc113;
+}
+
+.second-section .about-div p{
     color: #e1e1e1;
     margin-bottom: 10px;
 }
 
-
-
-
-.second-section .article-container .img-content{
-
-    width: 50%;
-    height: 50vh;
-    margin-bottom: 0px;
-    margin-right: 20px;
+.second-section .about-div img{
+    width: 100%;
 }
 
-
-
-
-.second-section .article-container .article-det-details{
-    width: 50%;
-}
-
-
-.second-section .article-container .article-det-details a{
+.second-section .about-div .first-row{
+    display: flex;
     margin-top: 10px;
-    color: #0d1118;
-    background-color: #ecc113;
-    font-weight: 550;
-    padding: 10px 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -256,7 +245,6 @@ body{
 .footer .logo a{
     font-size: 40px;
     font-weight: 700;
-    color: #939393;
 }
 
 .footer span{

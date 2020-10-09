@@ -3,6 +3,15 @@
     session_start();
 
 
+    try{
+        $base = new PDO('mysql:host=localhost; dbname=sensei; charset=utf8',"root","");
+        // echo "connexion done";
+    }
+    catch(Exception $e){
+        // echo "connexion not done";
+    };
+
+
     if (isset($_POST['submit'])) {
         $title = $_POST['article_title'];
 
@@ -52,9 +61,9 @@
 
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
-                <a href="#">PARTENERS</a>
+                <a href="Partners.php">PARTNERS</a>
                 <a href="blog.php">BLOG</a>
-                <a href="#">CONTACTS</a>
+                <a href="contactpage.php">CONTACTS</a>
             </div>
 
             <div class="menu">
@@ -112,36 +121,32 @@
                             <thead>
                                 <tr>
                                 <th scope="col">Comments</th>
-                                <th scope="col">Users</th>
                                 <th scope="col">Discard</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                <?php  $requette2 = $base->prepare("select * from comments");
+                                       $requette2->execute(array()); 
+                                       while ($ligne = $requette2-> fetch()){ 
+                                ?>
                                 <tr>
-                                <td><a href="#"><h2>Comments content</h2></a></td>
-                                <td><a href="#">Update</a></td>
-                                <td><a href="#">Delete</a></td>
+                                <td><a href="#"><h2><?php echo $ligne['comment_content']; ?></h2></a></td>
+                                <td><a name="delete" href="admincommentsdashboard.php?id=<?php echo $ligne['id_comment'];?>">Delete</a></td>
+                                <?php
+                                    if(isset($_GET["id"])){
+                                        
+
+
+                                        $requette = $base->prepare("DELETE FROM comments WHERE id_comment='" . $_GET['id'] . "'");
+                                        $resultat = $requette->execute(array());
+                                        // var_dump($requette);
+                                        header('location:admincommentsdashboard.php');
+
+                                    }
+                        
+                                ?>
                                 </tr>
-                                <tr>
-                                <td><a href="#"><h2>Comments content</h2></a></td>
-                                <td><a href="#">Update</a></td>
-                                <td><a href="#">Delete</a></td>
-                                </tr>
-                                <tr>
-                                <td><a href="#"><h2>Comments content</h2></a></td>
-                                <td><a href="#">Update</a></td>
-                                <td><a href="#">Delete</a></td>
-                                </tr>
-                                <tr>
-                                <td><a href="#"><h2>Comments content</h2></a></td>
-                                <td><a href="#">Update</a></td>
-                                <td><a href="#">Delete</a></td>
-                                </tr>
-                                <tr>
-                                <td><a href="#"><h2>Comments content</h2></a></td>
-                                <td><a href="#">Update</a></td>
-                                <td><a href="#">Delete</a></td>
-                                </tr>
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>

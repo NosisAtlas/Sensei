@@ -85,7 +85,14 @@
 
     }
     
-
+    if($_SESSION['id_role']  == 1 )
+    {
+        $requette2 = $base->prepare("select * from articles ");
+         $requette2->execute(array());
+    }else {
+        $requette2 = $base->prepare("select * from articles where id_user= ? ");
+         $requette2->execute(array($_SESSION['id_user']));
+    }
 
 ?>
 
@@ -113,9 +120,9 @@
 
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>
-                <a href="#">PARTENERS</a>
+                <a href="Partners.php">PARTNERS</a>
                 <a href="blog.php">BLOG</a>
-                <a href="#">CONTACTS</a>
+                <a href="contactpage.php">CONTACTS</a>
             </div>
 
             <div class="menu">
@@ -217,14 +224,10 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <?php     $reponse = $base->query("select * from articles");
-                                while($ligne=$reponse->fetch()) { 
-                                    $_SESSION['article_title']=$ligne['title'];
-                                    $_SESSION['id_category']=$ligne['id_category'];
-                            ?> 
+                            <?php  while($ligne=$requette2->fetch()) {  ?> 
                             
                                 <tr>
-                                <td><a href="#"><h2><?php   echo $_SESSION['article_title'] ;   ?></h2></a></td>
+                                <td><a href="#"><h2><?php   echo $ligne['title'] ;   ?></h2></a></td>
                                 <td><a href="adminarticlesupdatedashboard.php?id=<?php echo $ligne['id_article'];?>&title=<?php echo $ligne['title']?>">Update</a></td>
                                 <td><a name="delete" href="adminarticlesdashboard.php?id=<?php echo $ligne['id_article'];?>&title=<?php echo $ligne['title']?>">Delete</a></td>
                                 <?php
