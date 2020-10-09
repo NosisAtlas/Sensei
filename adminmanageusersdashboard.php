@@ -128,7 +128,7 @@
                 </form>
 
 
-                    <div class="manage-articles article-div">
+                    <div class="manage-articles article-div" style="margin-left:30px">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -154,7 +154,7 @@
                                         $requette = $base->prepare("DELETE FROM users WHERE id_user='" . $_GET['id'] . "'");
                                         $resultat = $requette->execute(array());
                                         // var_dump($requette);
-                                        header('location:adminmanageusersdashboard.php');
+                                        // header('location:adminmanageusersdashboard.php'); PROBLEM OF HEADER!!!!!!
 
                                     }
                         

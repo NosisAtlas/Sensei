@@ -61,10 +61,25 @@
             if(empty($_POST['text_editor'])){
                 $errors['text_editor']="Article Content Required";
             }
+
+
+        // var_dump($articletitle);
+        // var_dump($categorytitle);
+        // var_dump($articledescription);
+        // var_dump($texteditor);
+        // var_dump($link_image);
+    
+        
+        
+        $requette = $base->prepare("UPDATE articles SET title = ?, description = ?, image_article = ?, content = ?, id_category=?, id_user = ? WHERE id_article=? ");
+        $resultat = $requette->execute(array($articletitle,$articledescription,$link_image,$texteditor,$categorytitle,$_SESSION['id_user'],$_GET['id']));
+        header('Location:adminarticlesdashboard.php');
+                // var_dump($resultat);
+        
      
          
-            $requette1 = $base->prepare("insert into articles(title,description,image_article,content,id_category,id_user) values(?,?,?,?,?,?)");
-            $requette1->execute(array($articletitle, $articledescription, $link_image, $texteditor, $categorytitle,$_SESSION['id_user']));
+            // $requette1 = $base->prepare("insert into articles(title,description,image_article,content,id_category,id_user) values(?,?,?,?,?,?)");
+            // $requette1->execute(array($articletitle, $articledescription, $link_image, $texteditor, $categorytitle,$_SESSION['id_user']));
             
 
             
@@ -72,18 +87,6 @@
 
 
 
-
-    if(isset($_GET["id"])){
-        // $category = $_GET["category"];
-
-
-        $requette = $base->prepare("DELETE FROM articles WHERE id_article='" . $_GET['id'] . "'");
-        $resultat = $requette->execute(array());
-        // var_dump($requette);
-        header('location:adminarticlesdashboard.php');
-        
-
-    }
     
 
 
@@ -203,50 +206,10 @@
 
 
                     <div class="publish-article article-div">
-                        <h1>Publish Article</h1>
-                        <input type="submit" name="publish" value="Publish" style="color:#141517; background-color:#ecc113;border:none;padding:10px 30px;cursor:pointer;">
+                        <h1>Update Article</h1>
+                        <input type="submit" name="publish" value="Update" style="color:#141517; background-color:#ecc113;border:none;padding:10px 30px;cursor:pointer;">
                     </div>
 
-                    <div class="manage-articles article-div">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                <th scope="col">#Articles</th>
-                                <th scope="col">Modify</th>
-                                <th scope="col">Discard</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <?php     $reponse = $base->query("select * from articles");
-                                while($ligne=$reponse->fetch()) { 
-                                    $_SESSION['article_title']=$ligne['title'];
-                                    $_SESSION['id_category']=$ligne['id_category'];
-                            ?> 
-                            
-                                <tr>
-                                <td><a href="#"><h2><?php   echo $_SESSION['article_title'] ;   ?></h2></a></td>
-                                <td><a href="adminarticlesupdatedashboard.php?id=<?php echo $ligne['id_article'];?>&title=<?php echo $ligne['title']?>">Update</a></td>
-                                <td><a name="delete" href="adminarticlesdashboard.php?id=<?php echo $ligne['id_article'];?>&title=<?php echo $ligne['title']?>">Delete</a></td>
-                                <?php
-                                    // if(isset($_GET["id"])){
-                                    //     $category = $_GET["category"];
-
-
-                                    //     $requette = $base->prepare("DELETE FROM articles WHERE id_article='" . $_GET['id'] . "'");
-                                    //     $resultat = $requette->execute(array());
-                                    //     var_dump($requette);
-                                    //     header('location:adminarticlesdashboard.php');
-                                        
-
-                                    // }
-                        
-                                ?>
-                                </tr>
-                            
-                            <?php } ?>
-                            </tbody>
-                        </table>
-                    </div>
                 </form>
             </div>
 

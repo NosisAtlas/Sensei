@@ -28,8 +28,8 @@
         $requette2->execute(array($insertcmnt,$_SESSION['id_user']));
     }
 
-    $requette2 = $base->prepare("select * from comments where id_article=?");
-    $requette2->execute(array($_SESSION['id_user']));
+    // $requette2 = $base->prepare("select * from comments where id_article=?");
+    // $requette2->execute(array($_SESSION['id_user']));
 
     // $requette2 = $base->prepare("select comment_content.comments, username.users from comments innerjoin users on comments.id_comment = users.username");
     // $requette2->execute(array($_SESSION['id_user']));
@@ -118,13 +118,16 @@
 
         <div class="comment-content">
             <h3>All Comments</h3>
-            <?php  while($ligne = $requette2->fetch()) 
-            $comment=$ligne['comment_content'];
-            $usernamecmnt=$ligne['username'];
-            var_dump($usernamecmnt);
+            <?php  
+            // while($ligne = $requette2->fetch()) 
+            // $comment=$ligne['comment_content'];
+            // $usernamecmnt=$ligne['username'];
+            // var_dump($usernamecmnt);
             {     ?>
             <h4>Username</h4>
-            <p class="comment-inner"><?php echo $usernamecmnt; ?></p>
+            <p class="comment-inner"><?php 
+            // echo $usernamecmnt; 
+            ?></p>
             <br><br>
             <?php  } ?>
         </div>
