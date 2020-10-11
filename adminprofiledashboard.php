@@ -170,14 +170,15 @@
                             <a href="admincommentsdashboard.php" class="btn">See All...</a>
                         </div>
                     </div>
-
+                    <?php  if($_SESSION['id_role'] == 1 ) {?>
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                            <h2 class="card-title">Favourites Articles</h2>
+                            <h2 class="card-title">Users</h2>
                             <p class="card-text">With bunch of articles about various category related to sports.</p>
-                            <a href="#" class="btn">See All...</a>
+                            <a href="adminmanageusersdashboard.php" class="btn">See All...</a>
                         </div>
                     </div>
+                    <?php } ?>
                 </div>
             </div>
                 

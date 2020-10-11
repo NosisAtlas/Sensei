@@ -125,8 +125,13 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php  $requette2 = $base->prepare("select * from comments");
-                                       $requette2->execute(array()); 
+                                <?php  if($_SESSION['id_role'] == 1 ){
+                                       $requette2 = $base->prepare("select * from comments");
+                                       $requette2->execute(array()); }
+                                       else{
+                                        $requette2 = $base->prepare("select * from comments where id_comment = id_user");
+                                        $requette2->execute(array()); }
+                                       
                                        while ($ligne = $requette2-> fetch()){ 
                                 ?>
                                 <tr>
