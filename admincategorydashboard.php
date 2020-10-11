@@ -96,7 +96,7 @@
 
         <div class="dashboard-header">
 
-        <div class="username"><?php   echo $_SESSION['username'] ;  ?></div>
+            <div class="username"><?php   echo $_SESSION['username'] ;  ?></div>
 
             <nav class="search-bar">
                 <form class="form-inline">

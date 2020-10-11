@@ -14,6 +14,12 @@
 
         $requette2 = $base->prepare("select * from articles limit 7");
     $requette2->execute(array());
+
+
+    // if(isset(input-search-submit)){
+    //     $requette3 = $base->prepare("select * from articles where title like ?"); //Problem like
+    // $requette3->execute(array($_POST['input-search']));
+    // }
 ?>
 
 
@@ -36,6 +42,25 @@
 }
 .second-section .article-container{
     height:60vh;
+}
+/*SEARCH INPUT */
+.search-bar .form-inline .search-input{
+    color: #0d1118;
+    background-color: #ecc113;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight:500;
+}
+
+.search-bar .form-inline .search-btn{
+    color: #0d1118;
+    background-color: #ecc113;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight:500;
 }
     </style>
 </head>
@@ -63,6 +88,7 @@
             </div>
         </div>
     </div>
+
     <?php  if(isset($_SESSION['id_user'])) {?>
     <div class="user-session-section">
         <div class="menu"><a href="#"><i class="fa fa-list"></i></a></div>
@@ -70,6 +96,13 @@
         <div class="avatar-content"><a href="adminprofiledashboard.php"><img src="<?php echo $_SESSION['chemin_avatar']; ?>" alt=""></a></div>
     </div>
     <?php  } ?>
+
+    <nav class="search-bar">
+                <form class="form-inline" action="#" method="POST">
+                    <input name="input-search" class="search-input" type="search" name="search" placeholder="Search" aria-label="Search">
+                    <input name="input-search-submit" class="search-btn" type="submit" name="btn-search" value="search">
+                </form>
+    </nav>
 
     <div class="second-section">
         <h1>Articles</h1>
