@@ -231,17 +231,17 @@
                                 <td><a href="adminarticlesupdatedashboard.php?id=<?php echo $ligne['id_article'];?>&title=<?php echo $ligne['title']?>">Update</a></td>
                                 <td><a name="delete" href="adminarticlesdashboard.php?id=<?php echo $ligne['id_article'];?>&title=<?php echo $ligne['title']?>">Delete</a></td>
                                 <?php
-                                    // if(isset($_GET["id"])){
-                                    //     $category = $_GET["category"];
+                                    if(isset($_GET["id"])){
+                                        $category = $_GET["title"];
 
 
-                                    //     $requette = $base->prepare("DELETE FROM articles WHERE id_article='" . $_GET['id'] . "'");
-                                    //     $resultat = $requette->execute(array());
-                                    //     var_dump($requette);
-                                    //     header('location:adminarticlesdashboard.php');
+                                        $requette = $base->prepare("DELETE FROM articles WHERE id_article='" . $_GET['id'] . "'");
+                                        $resultat = $requette->execute(array());
+                                        // var_dump($requette);
+                                        header('location:adminarticlesdashboard.php');
                                         
 
-                                    // }
+                                    }
                         
                                 ?>
                                 </tr>

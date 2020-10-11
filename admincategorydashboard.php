@@ -158,7 +158,6 @@
                                 <tr>
                                 <td><a href="#"><h2><?php   echo $_SESSION['title_category'] ;   ?></h2></a></td>
                                 <td><a href="admincategoryupdate.php?id=<?php echo $ligne['id_category'];?>&category=<?php echo $ligne['title_category']?>">Update</a></td>
-                                <td><a name="delete" href="admincategorydashboard.php?id=<?php echo $ligne['id_category'];?>&category=<?php echo $ligne['title_category']?>">Delete</a></td>
                                 <?php
                                     if(isset($_GET["id"])){
                                         $category = $_GET["category"];
@@ -172,6 +171,8 @@
                                     }
                         
                                 ?>
+                                <td><a name="delete" href="admincategorydashboard.php?id=<?php echo $ligne['id_category'];?>&category=<?php echo $ligne['title_category']?>">Delete</a></td>
+                                
                                 </tr>
                             
                             <?php } ?>
