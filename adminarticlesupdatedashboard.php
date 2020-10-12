@@ -40,7 +40,7 @@
     
             if(isset( $_FILES['srcimage'])    and  $_FILES['srcimage']['error'] == 0)
             {
-                if( $_FILES['srcimage']['size']< 3000000)
+                if( $_FILES['srcimage']['size']< 6000000)
                 {
                     $list_extensions = array('png','jpg', 'jpeg', 'gif'); 
                     $details = pathinfo($_FILES['srcimage']['name']); 
