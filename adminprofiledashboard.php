@@ -40,7 +40,7 @@
     
     
           
-        $requette1 = $base->prepare("select chemin_avatar,username from users order by id_user desc limit 1");
+        $requette1 = $base->prepare("select chemin_avatar,username,id_role from users order by id_user desc limit 1");
         $requette1->execute(array());
         // $_SESSION['chemin_avatar'] = $ligne['chemin_avatar']
 
@@ -48,7 +48,10 @@
         // $requette2->execute(array($_SESSION['id_role']));
 
 
-
+        // if(isset($_POST['input-search-submit'])){
+        //     $requette3 = $base->prepare("select * from articles where title like ?"); //Problem like
+        // $requette3->execute(array("%".$_POST['input-search']."%"));
+        // }
 
 ?>
 
@@ -101,12 +104,12 @@
 
             <div class="username"><?php   echo $_SESSION['username'] ;  ?></div>
 
-            <nav class="search-bar">
-                <form class="form-inline">
-                    <input class="search-input" type="search" name="search" placeholder="Search" aria-label="Search">
-                    <input class="search-btn" type="submit" name="btn-search" value="search">
+            <!-- <nav class="search-bar">
+                <form class="form-inline" action="#" method="POST">
+                    <input class="search-input" type="search" name="input-search" placeholder="Search" aria-label="Search">
+                    <input class="search-btn" type="submit" name="input-search-submit" value="search">
                 </form>
-            </nav>
+            </nav> -->
 
         </div>
 
@@ -134,7 +137,11 @@
                     <img class="avatar-img shadow-dark" src="<?php echo $_SESSION['chemin_avatar'] ?>" alt="">
 
                     <h1 class="name-user"><?php   echo $_SESSION['username'] ;   ?></h1>
-                    <p class="user-title" style="margin-bottom:20px;">Admin</p>
+                    <?php  if($_SESSION['id_role'] == 1 ) { ?>
+                    <p class="user-title" style="margin-bottom:20px;">admin</p>
+                    <?php }else{  ?>
+                        <p class="user-title" style="margin-bottom:20px;">user</p>
+                    <?php }?>
                     <form action="#" method="POST" enctype="multipart/form-data">
                         <!-- <label>Select a file</label> -->
                         <input type="file" name="srcimage" id="file" style="display:none">

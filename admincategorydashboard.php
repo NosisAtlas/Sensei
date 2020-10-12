@@ -98,12 +98,12 @@
 
             <div class="username"><?php   echo $_SESSION['username'] ;  ?></div>
 
-            <nav class="search-bar">
+            <!-- <nav class="search-bar">
                 <form class="form-inline">
                     <input class="search-input" type="search" name="search" placeholder="Search" aria-label="Search">
                     <input class="search-btn" type="submit" name="btn-search" value="search">
                 </form>
-            </nav>
+            </nav> -->
 
         </div>
 

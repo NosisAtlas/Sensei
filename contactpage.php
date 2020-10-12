@@ -36,8 +36,8 @@
     </div>
 
     <?php  if(isset($_SESSION['id_user'])) {?>
-    <div class="user-session-section">
-        <div class="menu"><a href="#"><i class="fa fa-list"></i></a></div>
+    <div class="user-session-section" style="width:130px;">
+        <!-- <div class="menu"><a href="#"><i class="fa fa-list"></i></a></div> -->
         <div class="user-name"><?php echo $_SESSION['username']; ?></div>
         <div class="avatar-content"><a href="adminprofiledashboard.php"><img src="<?php echo $_SESSION['chemin_avatar']; ?>" alt=""></a></div>
     </div>
