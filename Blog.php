@@ -16,10 +16,10 @@
     $requette2->execute(array());
 
 
-    // if(isset(input-search-submit)){
-    //     $requette3 = $base->prepare("select * from articles where title like ?"); //Problem like
-    // $requette3->execute(array($_POST['input-search']));
-    // }
+    if(isset($_POST['input-search-submit'])){
+        $requette3 = $base->prepare("select * from articles where title like ?"); //Problem like
+    $requette3->execute(array("%".$_POST['input-search']."%"));
+    }
 ?>
 
 
@@ -166,6 +166,10 @@
             </div>
         </div> -->
 
+    <?php 
+        if(!isset($_POST['input-search-submit'])){ 
+    ?>
+
         <?php  while($ligne = $requette2->fetch()){ ?>
         <div class="article-container">
             <div class="img-content"><img src="<?php echo $ligne['image_article']; ?>" alt="" ></div>
@@ -178,6 +182,22 @@
                
             </div>
         </div>
+        <?php } ?>
+        <?php }else{   ?>
+
+            <?php  while($ligne = $requette3->fetch()){ ?>
+        <div class="article-container">
+            <div class="img-content"><img src="<?php echo $ligne['image_article']; ?>" alt="" ></div>
+            <div class="article-det-details">
+                <h2><?php echo $ligne['title']?></h2>
+                <p>
+                   <?php echo $ligne['description']?>
+                </p>
+                <a class="a-readmore" href="articledetails.php?id_article=<?php echo $ligne['id_article'] ?>">Read More</a>
+               
+            </div>
+        </div>
+        <?php } ?>
         <?php } ?>
 
         

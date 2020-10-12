@@ -129,8 +129,8 @@
                                        $requette2 = $base->prepare("select * from comments");
                                        $requette2->execute(array()); }
                                        else{
-                                        $requette2 = $base->prepare("select * from comments where id_comment = id_user");
-                                        $requette2->execute(array()); }
+                                        $requette2 = $base->prepare("select * from comments where id_user = ?");
+                                        $requette2->execute(array($_SESSION['id_user'])); }
                                        
                                        while ($ligne = $requette2-> fetch()){ 
                                 ?>
