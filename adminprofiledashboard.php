@@ -147,7 +147,6 @@
                         <input type="file" name="srcimage" id="file" style="display:none">
                         <label for="file" style="color:#141517; background-color:#ecc113; height:30px; width: 40px; padding:10px 20px;cursor:pointer;">Choose a Picture</label>
                         <br>
-                        <input type="submit" name="submit" value="Validate" style="margin-top:10px;border:none;color:#939393; background-color:#2f3031; height:30px; width: 100px; padding:10px 20px;cursor:pointer;">
                     </form>
                 </div>
 
