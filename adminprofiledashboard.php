@@ -76,7 +76,7 @@
 <body>
     <div class="top-section">
         <div class="header">
-            <div class="logo"><a href="LandingPage.php"><span>SEN</span>SEI</a></div>
+            <div class="logo"><a href="index.php"><span>SEN</span>SEI</a></div>
 
             <div class="nav-links">
                 <a href="aboutuspage.php">ABOUT US</a>

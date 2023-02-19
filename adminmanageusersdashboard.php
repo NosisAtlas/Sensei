@@ -146,6 +146,8 @@
                                         $resultat = $requette->execute(array($_GET['id']));
                                         // var_dump($requette);
                                        // header('location:adminmanageusersdashboard.php'); //PROBLEM OF HEADER!!!!!!
+                                       session_destroy();
+                                        header('location: index.php');
 
                                     }
                         

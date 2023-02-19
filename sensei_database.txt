@@ -1,0 +1,9 @@
+create table articles(
+	id int AUTO_INCREMENT PRIMARY KEY,
+    title varchar(150),
+    description varchar(150),
+    image_article varchar(255),
+    content text,
+    constraint FOREIGN KEY id_category REFERENCES categories(id), 
+    constraint FOREIGN KEY id_user REFERENCES users(id)
+)
